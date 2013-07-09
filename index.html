@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Resource</title>
+
+<script type="text/javascript" src="script/angular.min.js"></script>
+<script type="text/javascript" src="script/angular-resource.min.js"></script>
+<script type="text/javascript" src="script/app.js"></script>
+<script type="text/javascript" src="script/angular_ctrl.js"></script>
+
+</head>
+
+<body ng-app="EasyGallery">
+    <section ng-controller="GalleryCtrl">
+
+	<div id="gallery">
+        <h2>Simple Resource</h2>
+    
+        <ul ng-repeat="album in albums.data">
+            <li>{{album.name}}:{{album.id}}</li>
+        </ul>    
+    </div>
+    
+    </section>
+</body>
+</html>
